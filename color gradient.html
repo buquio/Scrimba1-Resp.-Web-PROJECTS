@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            .box { padding: 50px;  }
+            
+            .box-1 { background-image: linear-gradient(to bottom right, red, blue); }
+            
+            .box-2 { background-image: linear-gradient(0deg, green, yellow)}
+            
+             .box-3 { background-image: linear-gradient(90deg, orange 75%, teal) } 
+			
+/*			.box-4 { background-image: linear-gradient(90deg, orange 75%, teal 75%) }*/
+            
+            .box-4 { background-image: linear-gradient(90deg, orange,/*start from 0%*/
+                                                              orange 10%,/*ends at 10%*/
+                                                              teal 10%,/*start from 10%*/
+                                                              teal 20%,/*ends at 20%*/
+                                                              orange 20%,/*start from 20%*/
+                                                              orange 30%,/*ends at 30%*/
+                                                              teal 30%,/*start from 30%*/
+                                                              teal 40%,/*ends at 40%*/
+                                                              orange 40%)}/*start from 40% to the end 100%*/
+/*            can not continue becos orange & teal each already equals 100%*/
+			
+/*			.box-5 { background-image: radial-gradient(red, blue);*/
+
+            .box-5 { background-image: radial-gradient(red, blue);
+                     width: 600px;
+                     height: 300px; }
+            
+        </style>
+    </head>
+    <body>
+        <div class="box box-1"></div>
+		<br>
+        <div class="box box-2"></div>
+		<br>
+        <div class="box box-3"></div>
+		<br>
+        <div class="box box-4"></div>
+		<br>
+        <div class="box box-5"></div>
+        
+    </body>
+</html>
+
+
+
